@@ -10,7 +10,7 @@ spring:
       genai:
         api-key: ${GEMINI_API_KEY}
         chat:
-          model: gemini-3.6-flash
+          model: ${CHAT_MODEL}
     chat:
       memory:
         repository:
