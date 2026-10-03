@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: finuni
+  datasource:
+    url: ${DB_CONNECTION_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          model: gemini-3.6-flash
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: embedded
